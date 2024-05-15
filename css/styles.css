@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+
+header{
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    width: 120px;
+    border-radius: 0px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 55px; 
+    left: 830px; 
+    z-index: -1;
+}
+
+.hero-image img{
+    width: 650px;
+    height: 690px;
+    background-color: #5CB4B5 ;
+    object-fit: cover;
+    border-radius: 40px 40px 40px 400px;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 10px 40px;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px; /* Añade relleno solo en la parte superior e inferior para centrar el contenido verticalmente */
+}
+
+.menu {
+    list-style: none;
+    padding-left: 590px;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #000;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 250px 0px;
+    margin-right: 600px;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a.logo{
+    font-size: 33px;
+    color: #5CB4B5;
+    font-weight: 600;
+}
+
+nav .login button{
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup{
+    background-color: #FAFAFA;
+    opacity: 0.71;
+    color: #000;
+    border-radius: 5px 5px 5px 20px;
+    margin-right: 14px;
+    font-weight: 550;
+}
+
+nav .login button.signin{
+    background-color: #FAFAFA;
+    color: #000;
+    border-radius: 5px 5px 5px 20px;
+    margin-right: 13px;
+    font-weight: 550;
+}
+
+.left h1{
+    margin: 0;
+    font-size: 80px;
+    color: #000;
+}
+
+.left h1 span{
+    color: #5CB4B5;
+}
+
+.left p{
+    margin: 30px 0;
+    color: #000;
+}
+
+.left a{
+    display: flex;
+    align-items: center;
+    background: #F17268;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    margin-left: 192px;
+    border-radius: 5px 5px 5px 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.left a span{
+    color: #000;
+    margin-left: 10px;
+}
