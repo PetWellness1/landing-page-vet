@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
-    <title>PetWellness</title>
+    <script src="script.js" defer></script>
+    <title>Landing PetWellness</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="container1">
+            <div class="container">
                 <div class="navbar-content">
                     <div class="logo">
                         <img src="assets/logo.png" alt="PetWellness">
                     </div>
-                    <ul class="menu">
-                        <li><a href="#about-us">Nosotros</a></li>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#market">Tienda</a></li>
-                        <li><a href="#blogs">Blog</a></li>
-                    </ul>
+                    <div class="menu-container">
+                        <ul class="menu">
+                            <li><a href="#about-us">Nosotros</a></li>
+                            <li><a href="#services">Servicios</a></li>
+                            <li><a href="#market">Tienda</a></li>
+                            <li><a href="#blogs">Blog</a></li>
+                        </ul>
+                    </div>
                     <div class="login">
                         <button class="signup">Crear Cuenta</button>
                         <button class="signin">Entrar</button>
@@ -31,7 +35,7 @@
         </nav>
     
         <div class="hero">
-            <div class="container">
+            <div class="container1">
                 <div class="hero-content">
                     <div class="left">
                         <h1>Cuidalos, <span>Cambia sus vidas</span></h1>
@@ -51,9 +55,162 @@
         </div>
     </header>
     <main>
-        <h2 class="separator">
-            Nuestros Servicios
-        </h2>
+        <div class="gallery">
+            <div class="gallery-item large">
+                <img src="assets/perro.jpg" alt="Perros">
+                <span class="label">Perros</span>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/cobayo.png" alt="Cobayos">
+                <span class="label">Cobayos</span>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/loro.png" alt="Aves">
+                <span class="label">Aves</span>
+            </div>
+            <div class="gallery-item wide">
+                <img src="assets/gato.png" alt="Gatos">
+                <span class="label">Gatos</span>
+            </div>
+        </div>
+        <div class="Services">
+            <h2 class="separator">
+                Nuestros Servicios
+            </h2>
+        
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                  <li class="card">
+                    <div class="img"><img src="assets/img-1.jpg" alt="img" draggable="false"></div>
+                    <h2>Cardiología</h2>
+                    <span>Los exámenes cardiológicos periódicos se han vuelto una
+                        práctica necesaria permitiendo la identificación y tratamiento de enfermedades cardíacas.</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/img-2.jpg" alt="img" draggable="false"></div>
+                    <h2>Cirugía Especializada</h2>
+                    <span>Nuestros profesionales se encuentran capacitados para 
+                        realizar todo tipo de cirugías especializadas, desde cirugías plásticas hasta neurocirugías.</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/img-3.jpg" alt="img" draggable="false"></div>
+                    <h2>Cirugía General</h2>
+                    <span>Los exámenes cardiológicos periódicos se han vuelto una
+                        práctica necesaria permitiendo la identificación y tratamiento de enfermedades cardíacas.</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/img-4.jpg" alt="img" draggable="false"></div>
+                    <h2>Endocrinología</h2>
+                    <span>La endocrinología veterinaria es el área de la medicina veterinaria que se dedica al 
+                        estudio de los desórdenes de las glándulas endocrinas.</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/img-5.jpg" alt="img" draggable="false"></div>
+                    <h2>Dermatología</h2>
+                    <span>La dermatología veterinaria es la especialidad que se dedica al estudio de las 
+                        enfermedades de la piel, las uñas y el pelo.</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/img-6.jpg" alt="img" draggable="false"></div>
+                    <h2>Neurología</h2>
+                    <span>La neurología es la especialidad que se dedica al diagnóstico y tratamiento 
+                        de enfermedades que afectan el sistema nervioso.</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/img-6.jpg" alt="img" draggable="false"></div>
+                    <h2>Nutrición Clínica</h2>
+                    <span>Una dieta equilibrada ayuda a la mascota enferma a incorporar los nutrientes
+                        que necesita para reponerse.</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/img-6.jpg" alt="img" draggable="false"></div>
+                    <h2>Endoscopía</h2>
+                    <span>La endoscopia es uno de los mejores y más utilizados métodos de evaluación 
+                        del tracto gastro intestinal.</span>
+                  </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+    
+            <div class="view-more">
+                <button>Ver más</button>
+            </div>
+        </div>
+    
+        <div class="blogs">
+            <h2 class="separator">
+                Últimos Artículos
+            </h2>
+        
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                  <li class="card">
+                    <div class="img"><img src="assets/blog1.png" alt="img" draggable="false"></div>
+                    <h2>¿Qué tener en cuenta si vas a llevar a tu perro a un restaurante pet-friendly?</h2>
+                    <span>¿Te ha pasado que quieres ir a comer a algún lugar fuera de tu casa,
+                         pero no quieres dejar a tu engreído solo? O simplemente, ¿te gustaría estar en......</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/blog2.png" alt="img" draggable="false"></div>
+                    <h2>Nuestros gatos en otoño, cómo les afecta y cómo cuidarlos</h2>
+                    <span>Llegó el otoño, y sin duda el cambio de estación genera un
+                         cambio en nuestro ánimo. Para nosotros puede ser una época feliz ...</span>
+                  </li>
+                  <li class="card">
+                    <div class="img"><img src="assets/blog3.png" alt="img" draggable="false"></div>
+                    <h2>De compras con Milaneso… en Sodimac!!</h2>
+                    <span>Cuántas veces has salido y has dejado a tu mascohijo en casa para
+                         hacer compras con su carita de ¡no te vayas!!! Felizmente ahora ya podemos llevarlos con nosotros ...</span>
+                  </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>
+        
+            <div class="view-more">
+                <button>Ir al Blog</button>
+            </div>
+        </div>
+    
+        <div class="work">
+            <div class="content-work">
+                <h1>¿Eres veterinario y te gustaría ofrecer tus servicios en nuestra plataforma?</h1>
+                <button>Trabaja con nosotros</button>
+            </div>
+            <div class="image-container">
+                <img src="assets/work.png" alt="Veterinario con perro">
+            </div>
+        </div> 
+    
+        <footer>
+            <div class="left-links">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="PetWellness">
+                </div>
+                <div class="social">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-facebook-square'></i>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div>
+            <div class="horarios-center">
+                <div class="horarios">
+                    <h3>Horarios de Atención</h3>
+                    <p>Lunes a Viernes: 9:00 am - 6:00 pm</p>
+                    <p>Sábados: 9:00 am - 1:00 pm</p>
+                </div>
+            </div>
+            <div class="right-links">
+                <div class="links">
+                    <a href="#">Contáctanos : info@petwellness.pe</a>
+                    <a href="#">Empresas</a>
+                    <a href="#">Inscripción</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+                <p>© 2024 PetWellness | Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
