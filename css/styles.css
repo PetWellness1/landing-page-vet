@@ -16,7 +16,8 @@ body {
 }
 
 .container1 {
-    padding: 100px 20px;
+    padding: 100px 0px;
+    margin: 0px;
 }
 
 header{
@@ -115,7 +116,6 @@ nav .login button.signin{
 
 .hero-content {
     max-width: 800px;
-    width: 100%;
 }
 
 .left h1 {
@@ -173,16 +173,17 @@ nav .login button.signin{
 }
 
 .gallery {
+    margin: 0 20px;
     display: grid;
     align-items: center;
-    grid-template-columns: 10fr 2fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px;
+    grid-gap: 20px;
     padding: 40px;
-    padding-top: 40px;
+    padding-top: 90px;
+    margin-left: 170px;
     border-radius: 20px;
-    max-width: 1000px;
-    width: 100%;
+    max-width: 800px;
 }
 
 .gallery-item {
@@ -195,16 +196,31 @@ nav .login button.signin{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
-.gallery-item.large {
-    grid-column: span 1;
-    grid-row: span 3;
+.gallery-item:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    width: 496px;
+    height: 460px;
 }
 
-.gallery-item.wide {
-    grid-column: span 1;
+.gallery-item:nth-child(2) {
+    grid-column-start: span 1;
+    width: 276px;
+    height: 200px;
+}
+
+.gallery-item:nth-child(3) {
+    grid-column-start: span 1;
+    width: 276px;
+    height: 200px;
+}
+
+.gallery-item:nth-child(4) {
+    grid-column-start: span 2;
+    width: 576px;
+    height: 240px;
 }
 
 .label {
@@ -348,15 +364,18 @@ h2.separator{
 
 .work {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    padding: 0 40px;
+    padding: 0;
     width: 100%;
 }
 
 .content-work {
     flex: 1;
-    padding-right: 20px;
+    padding: 20px;
+    border: 5px solid #3498db; /* Blue border */
+
+
 }
 
 .content-work h1 {
@@ -381,18 +400,17 @@ h2.separator{
     background-color: #3ba19a;
 }
 
-.work .content-work .image-container {
+.work .image-container {
     flex: 1;
-    height: 100%;
     margin-right: 30px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    border: 5px solid #3498db; /* Blue border */
 }
 
-.work .content-work .image-container img {
-    width: 100%;
-    height: 100%;
+.work .image-container img {
+    width: 90px;
+    height: 90px;
     object-fit: cover;
     border-radius: 10px;
 }
