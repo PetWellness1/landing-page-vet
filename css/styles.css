@@ -197,7 +197,7 @@ a.logo{
 .hero-image {
     position: absolute;
     top: 20px; 
-    padding-left: 780px; 
+    padding-left: 795px; 
     z-index: -1;
     display: flex;
     justify-content: flex-end;
