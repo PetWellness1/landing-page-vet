@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="navbar-content">
                     <div class="logo">
-                        <img src="assets/logo.png" alt="PetWellness">
+                        <a data-target="#Home"><img src="assets/logo.png" alt="PetWellness"></a>
                     </div>
                     <div class="menu-container">
                         <ul class="menu">
@@ -38,23 +38,21 @@
         </nav>    
     </header>
     <main>
-        <div class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="left">
-                        <h1>Cuidalos, <span>Cambia sus vidas</span></h1>
-                        <p>Entra a la comunidad más grande de pet-lovers y disfruta de sus beneficios.</p>
-                        <a href="#"> 
-                            <span>Descubre más </span>
-                            <span class="material-symbols-outlined">
-                                trending_flat
-                            </span>
-                        </a>
+        <div data-content id="Home" class="active">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="left">
+                            <h1>Cuidalos, <span>Cambia sus vidas</span></h1>
+                            <p>Entra a la comunidad más grande de pet-lovers y disfruta de sus beneficios.</p>
+                            <a href="#"> 
+                                <span>Descubre más </span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div data-content id="Home" class="active">
             <div class="gallery-container">
                 <div class="gallery">
                     <div class="gallery-item">
@@ -73,7 +71,7 @@
                         <img src="assets/gato.png" alt="Gatos">
                         <span class="label">Gatos</span>
                     </div>
-            </div>
+                </div>
             </div>
             <div class="Services">
                 <h2 class="separator">
@@ -182,6 +180,97 @@
                     <img src="assets/work.png" alt="Veterinario con perro">
                 </div>
             </div> 
+        </div>
+        <div data-content id="market">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="left">
+                            <h1><span>Ahorre un 30% de descuento</span></h1>
+                            <p>En todos los productos</p>
+                            <a href="#"> 
+                                <span>Comprar Ahora  </span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="assets/market/bebedero.png" alt="Bebedero De Vidrio Pequeñas Mascotas 177 Ml">
+                    <h3>Bebedero De Vidrio Pequeñas Mascotas 177 Ml</h3>
+                    <span class="tag">Artículo</span>
+                    <div class="price-container">
+                        <span>S/.19.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/hamster.png" alt="Hamster Ball Pelota Para Roedores">
+                    <h3>Hamster Ball Pelota Para Roedores</h3>
+                    <span class="tag">Artículo</span>
+                    <div class="price-container">
+                        <span>S/.29.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/felix.png" alt="Purina Felix - Paté de pescado y atún">
+                    <h3>Purina Felix - Paté de pescado y atún</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.19.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/arena.png" alt="TKPET - Arena aglomerante">
+                    <h3>TKPET - Arena aglomerante</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.19.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/canbo.png" alt="Canbo Cuidado De Esterilizados / Sterilized Care">
+                    <h3>Canbo Cuidado De Esterilizados / Sterilized Care</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.34.10</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/cama.png" alt="Cama Tasmania Celeste 55 Cm">
+                    <h3>Cama Tasmania Celeste 55 Cm</h3>
+                    <span class="tag">Artículo</span>
+                    <div class="price-container">
+                        <span class="old-price">S/.89.90</span>
+                        <span>S/.62.93</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/metabolic.png" alt="Hills Pd Canine Metabolic Alimento Seco Perro">
+                    <h3>Hills Pd Canine Metabolic Alimento Seco Perro</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.218.0</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/cerdito.png" alt="Play&Bite Tc Mini Pig">
+                    <h3>Play&Bite Tc Mini Pig</h3>
+                    <span class="tag toy">Juguete</span>
+                    <div class="price-container">
+                        <span>S/.12.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

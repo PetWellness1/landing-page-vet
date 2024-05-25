@@ -1,3 +1,16 @@
+const targets = document.querySelectorAll('[data-target]')
+const content = document.querySelectorAll('[data-content]')
+
+targets.forEach(target => {
+	target.addEventListener('click', () => {
+		content.forEach(c => {
+			c.classList.remove('active')
+		})
+		const t = document.querySelector(target.dataset.target)
+		t.classList.add('active')
+	})
+})
+
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -99,15 +112,3 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-const targets = document.querySelectorAll('[data-target]')
-const content = document.querySelectorAll('[data-content]')
-
-targets.forEach(target => {
-	target.addEventListener('click', () => {
-		content.forEach(c => {
-			c.classList.remove('active')
-		})
-		const t = document.querySelector(target.dataset.target)
-		t.classList.add('active')
-	})
-})

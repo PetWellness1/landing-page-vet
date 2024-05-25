@@ -13,6 +13,14 @@ header{
     justify-content: space-between;
 }
 
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+}
+
 .back-to-top {
     display: none;
     position: fixed;
@@ -181,7 +189,7 @@ a.logo{
     background: #F17268;
     height: 40px;
     width: 200px;
-    padding: 5px;
+    padding: 6px;
     margin-left: 200px;
     border-radius: 5px 5px 5px 25px;
     font-size: 20px;
@@ -191,7 +199,11 @@ a.logo{
 }
 
 .left a span {
-    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.left a i {
+    padding-left: 12px;
 }
 
 .hero-image {
@@ -481,6 +493,87 @@ h2.separator{
     width: 450px;
     height: 450px;
     object-fit: cover;
+}
+
+/*Pestaña tienda*/
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 160px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-card img {
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #B8B8B8;
+    color: #333;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.tag.food {
+    color: #fff;
+    background-color: #2ABA27;
+}
+
+.tag.toy {
+    color: #fff;
+    background-color: #003049;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-container span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price-container .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+}
+
+.price-container i {
+    margin-left: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.price-container i:hover {
+    color: #000;
 }
 
 /*Sección de contacto*/
