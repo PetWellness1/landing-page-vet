@@ -588,3 +588,123 @@ footer{
    display: inline-flex;
    justify-content: space-between;
 }
+
+
+/*Nosotros*/
+.left-about-us{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 90px; 
+}
+
+.left-about-us h1{
+    margin-left:152px;
+    font-size: 64px;
+    color: #000;
+    
+}
+
+.left-about-us p{
+    font-size: 21px;
+    color: #000;
+    text-align: left;
+    margin-left: 40px; 
+   
+}
+
+
+
+/* Contenedor principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Contenedor de visión y misión/contacto */
+.vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 300px;
+}
+
+/* Contenedor de misión y botón de contacto */
+.mision-contacto-container {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+
+/* Estilos para .vision-content */
+.vision-content {
+    width: 621px;
+    padding: 22px 30px;
+    border-radius: 25px;
+    background-color: #29A7BD;
+    color: #fff;
+}
+
+.vision-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.vision-content p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/* Estilos para .mision-content */
+.mision-content {
+    width: 621px;
+    padding: 22px 30px;
+    border-radius: 25px;
+    background-color: #29A7BD;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.mision-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mision-content p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/* Estilos para el botón de contacto */
+.boton-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Evitar que el botón se reduzca */
+    margin-right: 1px;
+    
+}
+
+.boton-contacto button {
+    height: 90px;
+    width: 390px;
+    background-color: #F17268;
+    border-radius: 5px 5px 5px 25px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espacio entre texto y el icono */
+}
+
+.whatsapp-icon {
+    height: 30px; /* Ajusta el tamaño del icono según sea necesario */
+    width: auto;
+}
