@@ -659,6 +659,61 @@ h2.separator{
     width: auto;
 }
 
+.team-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+.team-section h1 {
+    margin-left:152px;
+    font-size: 64px;
+    color: #000;
+}
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 110px;
+}
+
+
+.team-member {
+    background-color: #D6ECED;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 340px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+
+.team-member h2 {
+    font-size: 22px;
+    margin: 10px 10px;
+    color: #0097B2;
+}
+
+
+.team-member p {
+    font-size: 20px;
+    color: #000;
+    line-height: 1.5;
+}
+
+
 
 /*Sección de contacto*/
 footer{
