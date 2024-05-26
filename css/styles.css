@@ -13,6 +13,7 @@ header{
     justify-content: space-between;
 }
 
+/*Activar contenido por defecto*/
 [data-content] {
 	display: none;
 }
@@ -21,6 +22,7 @@ header{
 	display: block;
 }
 
+/*Botón para subir al inicio*/
 .back-to-top {
     display: none;
     position: fixed;
@@ -422,6 +424,30 @@ h2.separator{
     background: #3ba19a;
 }
 
+/*Estadisticas de casos de exito*/
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 40px;
+    background-color: #fff;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 80px;
+    color: #0097B2;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 30px;
+    color: #333;
+}
+
 /*Sección de blogs se hace uso de los contenedores del carrusel para el formato de los blogs*/
 .blogs{
     background-color: #F0F0F0;
@@ -687,4 +713,49 @@ footer{
 .col .contact-details{
    display: inline-flex;
    justify-content: space-between;
+}
+
+/*Boton de whatsapp*/
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-text {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2db742;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-button i {
+    color: white;
+    font-size: 24px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-text p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
 }
