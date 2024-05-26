@@ -495,19 +495,19 @@ h2.separator{
     object-fit: cover;
 }
 
-/*Pestaña tienda*/
+/*Pestaña tienda (market)*/
 .product-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     padding-top: 160px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .product-card {
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -515,6 +515,12 @@ h2.separator{
     padding: 10px;
     width: 200px;
     text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -558,6 +564,7 @@ h2.separator{
 .price-container span {
     font-size: 18px;
     font-weight: bold;
+    color: #003049;
 }
 
 .price-container .old-price {
