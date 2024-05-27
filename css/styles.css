@@ -946,8 +946,101 @@ footer{
    justify-content: space-between;
 }
 
+/*Sección de servicios*/
+.services-content{
+    font-size: 35px;
+}
+.services-content h1{
+   margin-left: 150px;
+}
+.icons-servicios {
+    display: flex;
+    width: 495px;
+    justify-content: space-around; /* espaciar los iconos uniformemente */
+    align-items: center; 
+    margin-left: 60px;
+}
+
+.services-button{
+   margin: 100px;
+   margin-left: 120px;
+}
+.services-button button{
+    height: 90px;
+    width: 390px;
+    background-color: #F17268;
+    border-radius: 5px 5px 5px 25px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 
 
+.main-services-content h2 {
+    width: 476px;
+    color: #00a4e4;
+    margin-top: 0;
+}
+
+.main-services-content img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    padding: 100px;
+}
+
+.content_left{
+    font-size: 23px;
+}
+
+.content_left p{
+    width: 476px;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.content_right{
+    font-size: 23px;
+}
+
+.content_right p{
+    width: 476px;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.service_citas{
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+}
+
+.service_grooming {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+    background-color: #D9D9D9;
+}
+
+.service_servicios{
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+}
+
+.service_cirugia {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+    background-color: #D9D9D9;
+}
 
 /*Seccion descrubre mas*/
 .container-descubre {
@@ -1258,4 +1351,3 @@ input[type="radio"]#option2:checked ~ .toggle-bar {
     color: #333;
     font-size: 14px;
 }
-
