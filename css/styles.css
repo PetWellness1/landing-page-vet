@@ -946,3 +946,58 @@ input[type="radio"]#option2:checked ~ .toggle-bar {
     height: 450px;
     border-radius: 10px;
 }
+
+/* Estilos para el formulario de contacto */
+.contact-form-container {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-form textarea,
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5CB4B5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3ba19a;
+}
+
