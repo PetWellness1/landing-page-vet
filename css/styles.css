@@ -598,22 +598,40 @@ footer{
 }
 
 /*Sección de servicios*/
-.icons {
+.services-content{
+    font-size: 35px;
+}
+.services-content h1{
+   margin-left: 150px;
+}
+.icons-servicios {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-bottom: 20px;
+    width: 495px;
+    justify-content: space-around; /* espaciar los iconos uniformemente */
+    align-items: center; 
+    margin-left: 60px;
 }
 
-.icon {
-    width: 120px;
-    height: 120px;
-    background-color: #e0f7fa;
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.services-button{
+   margin: 100px;
+   margin-left: 120px;
 }
+.services-button button{
+    height: 90px;
+    width: 390px;
+    background-color: #F17268;
+    border-radius: 5px 5px 5px 25px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
 
 
 
