@@ -985,7 +985,7 @@ input[type="radio"]#option2:checked ~ .toggle-bar {
     content: '✔';
     color: #29A7BD;
     margin-right: 10px;
-
+}
 /*Boton de whatsapp*/
 .whatsapp-container {
     position: fixed;
