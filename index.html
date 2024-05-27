@@ -38,18 +38,16 @@
         </nav>    
     </header>
     <main>
-        <div data-content id="Home" class="active">
+        <div data-content id="Home">
             <div class="hero">
                 <div class="container">
                     <div class="hero-content">
                         <div class="left">
                             <h1>Cuidalos, <span>Cambia sus vidas</span></h1>
                             <p>Entra a la comunidad más grande de pet-lovers y disfruta de sus beneficios.</p>
-                            <a href="#"> 
-                                <span>Descubre más </span>
-                                <span class="material-symbols-outlined">
-                                    trending_flat
-                                </span>
+                            <a data-target="#Descubre"> 
+                                <span >Descubre más </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -73,13 +71,13 @@
                         <img src="assets/gato.png" alt="Gatos">
                         <span class="label">Gatos</span>
                     </div>
-            </div>
+                </div>
             </div>
             <div class="Services">
                 <h2 class="separator">
                     Nuestros Servicios
                 </h2>
-            
+           
                 <div class="wrapper">
                     <i id="left" class="fa-solid fa-angle-left"></i>
                     <ul class="carousel">
@@ -92,7 +90,7 @@
                       <li class="card">
                         <div class="img1"><img src="assets/cirugiae.png" alt="img" draggable="false"></div>
                         <h2>Cirugía Especializada</h2>
-                        <span>Nuestros profesionales se encuentran capacitados para 
+                        <span>Nuestros profesionales se encuentran capacitados para
                             realizar todo tipo de cirugías especializadas, desde cirugías plásticas hasta neurocirugías.</span>
                       </li>
                       <li class="card">
@@ -104,19 +102,19 @@
                       <li class="card">
                         <div class="img1"><img src="assets/bascula.png" alt="img" draggable="false"></div>
                         <h2>Endocrinología</h2>
-                        <span>La endocrinología veterinaria es el área de la medicina veterinaria que se dedica al 
+                        <span>La endocrinología veterinaria es el área de la medicina veterinaria que se dedica al
                             estudio de los desórdenes de las glándulas endocrinas.</span>
                       </li>
                       <li class="card">
                         <div class="img1"><img src="assets/dermatologia.png" alt="img" draggable="false"></div>
                         <h2>Dermatología</h2>
-                        <span>La dermatología veterinaria es la especialidad que se dedica al estudio de las 
+                        <span>La dermatología veterinaria es la especialidad que se dedica al estudio de las
                             enfermedades de la piel, las uñas y el pelo.</span>
                       </li>
                       <li class="card">
                         <div class="img1"><img src="assets/neurologia.png" alt="img" draggable="false"></div>
                         <h2>Neurología</h2>
-                        <span>La neurología es la especialidad que se dedica al diagnóstico y tratamiento 
+                        <span>La neurología es la especialidad que se dedica al diagnóstico y tratamiento
                             de enfermedades que afectan el sistema nervioso.</span>
                       </li>
                       <li class="card">
@@ -128,23 +126,40 @@
                       <li class="card">
                         <div class="img1"><img src="assets/endoscopia.png" alt="img" draggable="false"></div>
                         <h2>Endoscopía</h2>
-                        <span>La endoscopia es uno de los mejores y más utilizados métodos de evaluación 
+                        <span>La endoscopia es uno de los mejores y más utilizados métodos de evaluación
                             del tracto gastro intestinal.</span>
                       </li>
                     </ul>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                   </div>
-        
+       
                 <div class="view-more">
                     <button>Ver más</button>
                 </div>
             </div>
-        
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">190.500</span>
+                    <span class="stat-label">Casos atendidos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">58</span>
+                    <span class="stat-label">Profesionales</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">13.956</span>
+                    <span class="stat-label">Cirugías</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">229.440</span>
+                    <span class="stat-label">Horas de formación</span>
+                </div>
+            </div>
             <div class="blogs">
                 <h2 class="separator">
                     Últimos Artículos
                 </h2>
-            
+           
                 <div class="wrapper">
                     <ul class="carousel">
                       <li class="card">
@@ -167,12 +182,12 @@
                       </li>
                     </ul>
                   </div>
-            
+           
                 <div class="view-more">
                     <button>Ir al Blog</button>
                 </div>
             </div>
-        
+       
             <div class="work">
                 <div class="content-work">
                     <h1>¿Eres veterinario y te gustaría ofrecer tus servicios en nuestra plataforma?</h1>
@@ -181,7 +196,378 @@
                 <div class="image-container">
                     <img src="assets/work.png" alt="Veterinario con perro">
                 </div>
+            </div>
+        </div>
+
+        <div data-content id="about-us">
+            <div class="About-us">
+                <h1>Nosotros</h1>
+                <p>En PetWellness, nos dedicamos por completo al bienestar de tus queridas
+                    mascotas y a fortalecer el vínculo que compartes con ellas. Nuestra meta
+                    es ofrecerte una experiencia integral y enriquecedora que simplifique el
+                    cuidado de tus fieles compañeros. Desde nuestros inicios, nos hemos
+                    comprometido a proporcionar información actualizada y confiable, así
+                    como servicios veterinarios de primera calidad. Además, hemos creado
+                    una comunidad en línea donde los amantes de las mascotas pueden reunirse,
+                    aprender y compartir sus experiencias. Creemos firmemente en la importancia
+                    de cuidar tanto la salud física como el bienestar emocional de nuestras
+                    mascotas. Por eso, en PetWellness nos esforzamos por ser tu aliado de
+                    confianza en este viaje de cuidado y amor hacia tus amigos peludos</p>
+            </div>
+            <div class="main-content">
+                <div class="vision-container">
+                    <div class="vision-content">
+                        <h2>Visión</h2>
+                        <p>Convertirnos en la principal plataforma en línea para el cuidado y el bienestar de las mascotas, proporcionando recursos innovadores y servicios de calidad que promuevan una vida larga y saludable para cada animal de compañía.</p>
+                    </div>
+                    <div class="mision-contacto-container">
+                        <div class="mision-content">
+                            <h2>Misión</h2>
+                            <p>Nuestra misión es brindar a los cuidadores de mascotas con información confiable, acceso conveniente a servicios veterinarios y una comunidad solidaria, para que puedan brindar el mejor cuidado posible a sus amigos peludos.</p>
+                        </div>
+                        <div class="boton-contacto">
+                            <a href="https://chat.whatsapp.com/H1j67M0gM8cHeg2nONyRoO">
+                                <button><span>Contáctanos</span> <img src="assets/whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon"></button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section">
+                    <h1>Nuestro equipo</h1>
+                    <div class="team-container">
+                        <div class="team-member">
+                            <img src="assets/Nicole.png" alt="Francesca Nicole Bances Torres">
+                            <h2>Francesca Nicole Bances Torres</h2>
+                            <p>Soy estudiante de quinto ciclo de la carrera de Ciencias de la Computación. Actualmente, tengo interés en temas como el diseño de bases de datos y Big Data. Además, cuento con experiencia en lenguajes de programación como C++, Python, SQL y MongoDB.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/Alissa.png" alt="Alissa Zúñiga Alvarez">
+                            <h2>Alissa Zúñiga Alvarez</h2>
+                            <p>Actualmente, soy estudiante del 5to ciclo de la carrera de ciencias de la computación, poseo conocimientos básicos en desarrollo web y lenguajes de programación como C++, C#, JavaScript, Python, HTML y CSS. Además, tengo un interés en el mundo de la veterinaria, siendo voluntario de diferentes organizaciones y albergues de animales en el Perú.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/Marsi.png" alt="Marsi Valeria Figueroa Larragán">
+                            <h2>Marsi Valeria Figueroa Larragán</h2>
+                            <p>Soy una estudiante de Ciencias de la Computación y entusiasta en Data Science y la elaboración de páginas web. Es por ello, que poseo conocimientos en diferentes lenguajes de programación como C++, Python, Go, HTML, JavaScript, Ruby y CSS. De igual manera, al trabajar con base de datos tengo un sólido conocimiento en SQL y MongoDB.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/Axel.png" alt="Axel Yamir Patrona Rojas">
+                            <h2>Axel Yamir Patrona Rojas</h2>
+                            <p>Como estudiante en una carrera de informática poseo conocimientos básicos en programación en lenguajes como C++ y Python, lo que me permite abordar desafíos de manera creativa y encontrar soluciones innovadoras. Asimismo, cuento con certificaciones en Scrum y habilidades en el uso de herramientas como Excel para negocios básicos, HTML, CSS y Ruby, que complementan mi perfil profesional y me permiten adaptarme a diversas tareas y responsabilidades.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/Diego.png" alt="Diego Eduardo Ballón Villar">
+                            <h2>Diego Eduardo Ballón Villar</h2>
+                            <p>Soy Ingeniero Civil, con más de 2 años de experiencia en la elaboración de valorizaciones, metrados y construcción vial. Como profesional comprometido con la mejora continua, he obtenido certificaciones en Lean Six Sigma - Yellow Belt y Agile Project Management. Estas metodologías me han permitido desarrollar habilidades adicionales en la identificación y resolución de problemas, así como en la gestión eficiente de proyectos en entornos dinámicos. Además, tengo conocimientos en programación usando lenguaje C++ y Python.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-content id="Descubre">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="left">
+                            <h1>Descuentos exclusivos<br><span> con tu suscripción</span></h1>
+                            <p>Obtén descuentos en veterinarias, tiendas y más.</p>
+                            <a data-target="#Suscripcion"> 
+                                <span >Miembro Plus </span>
+                                <span class="material-symbols-outlined">
+                                    monetization_on
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="beneficios">
+                <h2 class="separator">
+                    Beneficios
+                </h2>
+                <div class="container-descubre">
+                    <div class="card-descubre">
+                        <div class="discount blue">70%</div>
+                        <img src="assets/aristocat.png" alt="Aristocat">
+                        <div class="content">
+                            <div class="category">Veterinaria</div>
+                            <div class="title">Aristocat Clínica Veterinaria</div>
+                            <div class="location">Lima</div>
+                            <div class="link">Conoce más</div>
+                        </div>
+                    </div>
+                    <div class="card-descubre">
+                        <div class="discount blue">35%</div>
+                        <img src="assets/panchocaverovet.png" alt="Panchocavero">
+                        <div class="content">
+                            <div class="category">Veterinaria</div>
+                            <div class="title">Pancho Cavero Clínica Veterinaria</div>
+                            <div class="location">Lima</div>
+                            <div class="link">Conoce más</div>
+                        </div>
+                    </div>
+                    <div class="card-descubre">
+                        <div class="discount blue">30%</div>
+                        <img src="assets/superpet.png" alt="Superpet">
+                        <div class="content">
+                            <div class="category">Tienda</div>
+                            <div class="title">Super Pet</div>
+                            <div class="location">Lima</div>
+                            <div class="link">Conoce más</div>
+                        </div>
+                    </div>
+                    <div class="card-descubre">
+                        <div class="discount blue">30%</div>
+                        <img src="assets/Clrondon.png" alt="Clínica Rondon">
+                        <div class="content">
+                            <div class="category">Veterinaria</div>
+                            <div class="title">Clínica Veterinaria Rondon</div>
+                            <div class="location">Lima</div>
+                            <div class="link">Conoce más</div>
+                        </div>
+                    </div>
+                    <div class="card-descubre">
+                        <div class="discount blue">25%</div>
+                        <img src="assets/petcenter.png" alt="Pet Center">
+                        <div class="content">
+                            <div class="category">Veterinaria</div>
+                            <div class="title">Pet Center</div>
+                            <div class="location">Lima</div>
+                            <div class="link">Conoce más</div>
+                        </div>
+                    </div>
+                    <div class="card-descubre">
+                        <div class="discount green">S/64.90</div>
+                        <img src="assets/BarfRambala.png" alt="B.A.R.F food">
+                        <div class="content">
+                            <div class="category">Alimento</div>
+                            <div class="title">Rambala</div>
+                            <div class="location">4 bolsas de alimento BARF Rambala Pavo-Res (800 gr. por bolsa)</div>
+                            <div class="link">Conoce más</div>
+                        </div>
+                    </div>
+                </div>
             </div> 
+            <div class="galeria-plataforma">
+                <h2 class="separator">
+                    Galería de Fotos
+                </h2>
+                <div class="center-toggle">
+                    <div class="toggle-switch">
+                        <input type="radio" id="option1" name="toggle" checked>
+                        <label for="option1" class="toggle-option" onclick="showGallery('Dueños')">Dueños</label>
+                        <input type="radio" id="option2" name="toggle">
+                        <label for="option2" class="toggle-option" onclick="showGallery('Veterinarios')">Veterinario</label>
+                        <div class="toggle-bar"></div>
+                    </div>
+                </div>
+                <div class="gallery Dueños">
+                    <div class="gallery-container">
+                        <div class="gallery-plat">
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistadueños.png" alt="Vista dueños incio">
+                                <span class="label">Inicio Dueños</span>
+                            </div>
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistadueñosreserva.png" alt="Vista dueños reserva">
+                                <span class="label">Reserva video consulta</span>
+                            </div>
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistadueñosHM.png" alt="Vista dueño hisorial medico">
+                                <span class="label">Historial médico mascota</span>
+                            </div>
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistadueñosvideoconsulta.png" alt="Vista dueño video consulta">
+                                <span class="label">Video consulta con doctor</span>
+                            </div>
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistadueñosrecordatorio.png" alt="Vista dueño agregar recordatorio">
+                                <span class="label">Agregar recordatorio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery Veterinarios" style="display: none;">
+                    <div class="gallery-container">
+                        <div class="gallery-plat">
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistavet.png" alt="Vista veterinario incio">
+                                <span class="label">Inicio Veterinarios</span>
+                            </div>
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistavetinfopac.png" alt="Vista veterinario informacion">
+                                <span class="label">Información de paciente</span>
+                            </div>
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistavetHM.png" alt="Vista veterinario hisorial medico">
+                                <span class="label">Historial médico paciente</span>
+                            </div>
+                            <div class="gallery-item-plat">
+                                <img src="assets/Galeriafotos/vistavetvideoconsulta.png" alt="Vista veterinario video consulta">
+                                <span class="label">Video consulta con paciente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-plataforma">
+                <h2 class="separator">
+                    Aprende a usar nuestra plataforma
+                </h2>
+                <div class="center-video">
+                    <video controls>
+                        <source src="assets/Galeriafotos/vet_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div data-content id="Suscripcion">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="left">
+                            <h1>Nuestros <br><span> Planes</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="planes">
+                <h2 class="separator">
+                    Planes
+                </h2>
+                <div class="plans-container">
+                    <div class="plan-card">
+                        <div class="badge">Más Vendido</div>
+                        <h2>PLAN SALUD</h2>
+                        <p class="price">S/ <span>220</span></p>
+                        <p class="description">Plan Preventivo Anual</p>
+                        <p class="validity">Válido por un año</p>
+                        <button class="btn">Comprar</button>
+                        <ul class="features">
+                            <li>CONSULTAS GENERALES Y DE EMERGENCIA ILIMITADAS*</li>
+                            <li>VIDEO CONSULTAS ILIMITADAS*</li>
+                            <li>DESCUENTOS EN SERVICIOS SELECCIONADOS</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card">
+                        <h2>PLAN SALUD SENIOR</h2>
+                        <p class="price">S/ <span>250</span></p>
+                        <p class="description">Exclusivo para mascotas Gerontes</p>
+                        <p class="validity">Válido por un año</p>
+                        <button class="btn">Comprar</button>
+                        <ul class="features">
+                            <li>CONSULTAS GENERALES Y DE EMERGENCIA ILIMITADAS*</li>
+                            <li>VIDEO CONSULTAS ILIMITADAS*</li>
+                            <li>DESCUENTOS EN SERVICIOS SELECCIONADOS</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card">
+                        <h2>PS PROTEC + 4 DESP.</h2>
+                        <p class="price">S/ <span>350</span></p>
+                        <p class="description">Plan Salud Protección + 4 Desparasitaciones al año</p>
+                        <p class="validity">Válido por un año</p>
+                        <button class="btn">Comprar</button>
+                        <ul class="features">
+                            <li>CONSULTAS GENERALES Y DE EMERGENCIA ILIMITADAS*</li>
+                            <li>VIDEO CONSULTAS ILIMITADAS*</li>
+                            <li>4 DESPARASITACIONES TOTALEMENTE CUBIERTAS*</li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div data-content id="market">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="left">
+                            <h1><span>¡Ahorre! <br> Obtenga un 30% de descuento</span></h1>
+                            <p>En todos los productos</p>
+                            <a href="#"> 
+                                <span>Comprar Ahora  </span>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="assets/market/bebedero.png" alt="Bebedero De Vidrio Pequeñas Mascotas 177 Ml">
+                    <h3>Bebedero De Vidrio Pequeñas Mascotas 177 Ml</h3>
+                    <span class="tag">Artículo</span>
+                    <div class="price-container">
+                        <span>S/.19.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/hamster.png" alt="Hamster Ball Pelota Para Roedores">
+                    <h3>Hamster Ball Pelota Para Roedores</h3>
+                    <span class="tag">Artículo</span>
+                    <div class="price-container">
+                        <span>S/.29.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/felix.png" alt="Purina Felix - Paté de pescado y atún">
+                    <h3>Purina Felix - Paté de pescado y atún</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.19.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/arena.png" alt="TKPET - Arena aglomerante">
+                    <h3>TKPET - Arena aglomerante</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.19.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/canbo.png" alt="Canbo Cuidado De Esterilizados / Sterilized Care">
+                    <h3>Canbo Cuidado De Esterilizados / Sterilized Care</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.34.10</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/cama.png" alt="Cama Tasmania Celeste 55 Cm">
+                    <h3>Cama Tasmania Celeste 55 Cm</h3>
+                    <span class="tag">Artículo</span>
+                    <div class="price-container">
+                        <span class="old-price">S/.89.90</span>
+                        <span>S/.62.93</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/metabolic.png" alt="Hills Pd Canine Metabolic Alimento Seco Perro">
+                    <h3>Hills Pd Canine Metabolic Alimento Seco Perro</h3>
+                    <span class="tag food">Comida</span>
+                    <div class="price-container">
+                        <span>S/.218.0</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="assets/market/cerdito.png" alt="Play&Bite Tc Mini Pig">
+                    <h3>Play&Bite Tc Mini Pig</h3>
+                    <span class="tag toy">Juguete</span>
+                    <div class="price-container">
+                        <span>S/.12.90</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div data-content id="services">
@@ -247,16 +633,18 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                
+               
                 <div class="col">
                     <h3>Contactanos</h3>
                     <div class="links">
                     <a href="#"><i class="fa-regular fa-envelope"></i> info@petwellness.pe</a>
-                    <a href="#">Empresas</a>
+                    <a href="#">Galeria de imagenes</a>
                     <a href="#">Inscripción</a>
+                    <a href="#">Preguntas Frecuentes</a>
                     <a href="#">Términos y condiciones</a>
                     </div>
                 </div>
+
 
                 <div class="col">
                     <h3>Locales y Contacto</h3>
@@ -270,6 +658,7 @@
                     <p>Av. San Luis 2645, San Borja <br> 941 145 243<br> Domingos - 8 a.m. - 8 p.m. <br>01 635 2774</p>
                     </div>
                 </div>
+
 
                 <div class="col">
                     <h3>Horarios</h3>
@@ -285,16 +674,28 @@
                 </div>
             </div>
 
+
             <div class="row">
                 <div class="form">
                 <p>© 2024 PetWellness | Todos los derechos reservados.</p>
                 </div>
             </div>
 
+
         </div>
-    </footer> 
+    </footer>
     <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
         <i class='bx bx-up-arrow-alt'></i>
-    </button>   
+    </button>  
+
+    <div class="whatsapp-container">
+        <a href="https://wa.me/1234567890" class="whatsapp-button">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div class="whatsapp-text">
+            <p>¿Necesitas ayuda?<br>¡Escríbenos!</p>
+        </div>
+    </div> 
+
 </body>
 </html>
