@@ -1,3 +1,35 @@
+<<<<<<< Updated upstream
+=======
+// Manejo de contenido basado en data-attributes
+const targets = document.querySelectorAll('[data-target]')
+const content = document.querySelectorAll('[data-content]')
+
+targets.forEach(target => {
+	target.addEventListener('click', () => {
+		content.forEach(c => {
+			c.classList.remove('active')
+		})
+		const t = document.querySelector(target.dataset.target)
+		t.classList.add('active')
+	})
+})
+
+//mostrar y ocultar galeria
+function showGallery(galleryName) {
+    const dueñosGallery = document.querySelector('.gallery.Dueños');
+    const veterinariosGallery = document.querySelector('.gallery.Veterinarios');
+
+    if (galleryName === 'Dueños') {
+        dueñosGallery.style.display = 'block';
+        veterinariosGallery.style.display = 'none';
+    } else if (galleryName === 'Veterinarios') {
+        dueñosGallery.style.display = 'none';
+        veterinariosGallery.style.display = 'block';
+    }
+}
+
+// Configuración del carrusel
+>>>>>>> Stashed changes
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -99,6 +131,7 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+<<<<<<< Updated upstream
 const targets = document.querySelectorAll('[data-target]')
 const content = document.querySelectorAll('[data-content]')
 
@@ -111,3 +144,51 @@ targets.forEach(target => {
 		t.classList.add('active')
 	})
 })
+=======
+
+
+
+//Galeria imagenes
+let slideIndexDueños = 0;
+let slideIndexVeterinarios = 0;
+
+function showSlides(type) {
+    const slides = document.querySelectorAll(`.carousel-container.${type} .carousel-item`);
+    const index = type === 'Dueños' ? slideIndexDueños : slideIndexVeterinarios;
+    slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${-index * 100}%)`;
+    });
+}
+
+function nextSlide(type) {
+    const slides = document.querySelectorAll(`.carousel-container.${type} .carousel-item`);
+    if (type === 'Dueños') {
+        slideIndexDueños = (slideIndexDueños + 1) % slides.length;
+    } else {
+        slideIndexVeterinarios = (slideIndexVeterinarios + 1) % slides.length;
+    }
+    showSlides(type);
+}
+
+function prevSlide(type) {
+    const slides = document.querySelectorAll(`.carousel-container.${type} .carousel-item`);
+    if (type === 'Dueños') {
+        slideIndexDueños = (slideIndexDueños - 1 + slides.length) % slides.length;
+    } else {
+        slideIndexVeterinarios = (slideIndexVeterinarios - 1 + slides.length) % slides.length;
+    }
+    showSlides(type);
+}
+
+function showGallery(type) {
+    document.querySelector('.carousel-container.Dueños').style.display = 'none';
+    document.querySelector('.carousel-container.Veterinarios').style.display = 'none';
+    document.querySelector(`.carousel-container.${type}`).style.display = 'block';
+    showSlides(type);
+}
+
+showGallery('Dueños');
+
+setInterval(() => nextSlide('Dueños'), 5000);
+setInterval(() => nextSlide('Veterinarios'), 5000);
+>>>>>>> Stashed changes
