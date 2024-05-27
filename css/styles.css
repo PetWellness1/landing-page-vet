@@ -15,6 +15,7 @@ header{
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 
 [data-content] {
     display: none;
@@ -26,6 +27,16 @@ header{
 }
 
 
+=======
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+}
+
+>>>>>>> 27a21764abfb630b0f403e4807bde96b942a7f50
 .back-to-top {
     display: none;
     position: fixed;
