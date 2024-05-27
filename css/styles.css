@@ -596,3 +596,22 @@ footer{
    display: inline-flex;
    justify-content: space-between;
 }
+
+.service img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #00a4e4;
+    margin-top: 0;
+}
+
+.content p {
+    color: #555;
+}
