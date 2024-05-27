@@ -13,6 +13,14 @@ header{
     justify-content: space-between;
 }
 
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+}
+
 .back-to-top {
     display: none;
     position: fixed;
@@ -923,7 +931,6 @@ input[type="radio"]#option2:checked ~ .toggle-bar {
 .carousel-next {
     right: 10px;
 }
-
 
 .video-container {
     display: flex;
