@@ -24,6 +24,7 @@ header{
 	display: block;
 }
 
+
 /*Botón para subir al inicio*/
 .back-to-top {
     display: none;
@@ -1040,6 +1041,67 @@ footer{
     align-items: center; /* Alinea verticalmente los elementos */
     justify-content: space-around;
     background-color: #D9D9D9;
+}
+
+/* Estilos para el formulario de "Reservar Servicio" */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.appointment-form {
+    background-color: #f0f0f0;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Aumenta el ancho del formulario */
+    max-width: 90%;
+    position: relative;
+    z-index: 10; /* Asegura que el formulario esté por encima de la imagen */
+}
+
+.appointment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5CB4B5;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appointment-form .radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.appointment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5CB4B5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.appointment-form button:hover {
+    background-color: #3ba19a;
 }
 
 /*Seccion descrubre mas*/
