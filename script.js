@@ -128,3 +128,47 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Galería de imágenes
+let slideIndexDueños = 0;
+let slideIndexVeterinarios = 0;
+
+function showSlides(type) {
+    const slides = document.querySelectorAll(`.carousel-container.${type} .carousel-item`);
+    const index = type === 'Dueños' ? slideIndexDueños : slideIndexVeterinarios;
+    slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${-index * 100}%)`;
+    });
+}
+
+function nextSlide(type) {
+    const slides = document.querySelectorAll(`.carousel-container.${type} .carousel-item`);
+    if (type === 'Dueños') {
+        slideIndexDueños = (slideIndexDueños + 1) % slides.length;
+    } else {
+        slideIndexVeterinarios = (slideIndexVeterinarios + 1) % slides.length;
+    }
+    showSlides(type);
+}
+
+function prevSlide(type) {
+    const slides = document.querySelectorAll(`.carousel-container.${type} .carousel-item`);
+    if (type === 'Dueños') {
+        slideIndexDueños = (slideIndexDueños - 1 + slides.length) % slides.length;
+    } else {
+        slideIndexVeterinarios = (slideIndexVeterinarios - 1 + slides.length) % slides.length;
+    }
+    showSlides(type);
+}
+
+function showGallery(type) {
+    document.querySelector('.carousel-container.Dueños').style.display = 'none';
+    document.querySelector('.carousel-container.Veterinarios').style.display = 'none';
+    document.querySelector(`.carousel-container.${type}`).style.display = 'block';
+    showSlides(type);
+}
+
+showGallery('Dueños');
+
+setInterval(() => nextSlide('Dueños'), 5000);
+setInterval(() => nextSlide('Veterinarios'), 5000);
+

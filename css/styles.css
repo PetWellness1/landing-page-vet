@@ -1415,5 +1415,6 @@ input[type="radio"]#option2:checked ~ .toggle-bar {
     font-size: 14px;
 }
 
-
-
+.contact-form button:hover {
+    background-color: #3ba19a;
+}
