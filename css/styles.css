@@ -1050,7 +1050,6 @@ footer{
     align-items: center;
     height: 100vh;
 }
-/* E*/
 
 .appointment-form {
     background-color: #f0f0f0;
@@ -1414,4 +1413,6 @@ input[type="radio"]#option2:checked ~ .toggle-bar {
     color: #333;
     font-size: 14px;
 }
+
+
 
