@@ -7,12 +7,12 @@ body {
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
-
 header{
     align-items: center;
     justify-content: space-between;
 }
 
+/*Activar contenido por defecto*/
 [data-content] {
 	display: none;
 }
@@ -21,6 +21,7 @@ header{
 	display: block;
 }
 
+/*Botón para subir al inicio*/
 .back-to-top {
     display: none;
     position: fixed;
@@ -64,7 +65,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px; 
+    padding: 0 10px;
     width: 100%;
 }
 
@@ -112,20 +113,20 @@ a.logo{
 }
 
 .login {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
 }
 
 .login button {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     padding: 8px 15px;
     border: none;
     cursor: pointer;
 }
 
 .login button i {
-    font-size: 14px; 
+    font-size: 14px;
     margin-right: 5px;
 }
 
@@ -173,14 +174,14 @@ a.logo{
 
 .left h1 span {
     color: #000;
-    font-weight: 800; 
+    font-weight: 800;
 }
 
 .left p {
     margin: 30px 0;
     color: #000;
     font-size: 20px;
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 .left a {
@@ -189,7 +190,7 @@ a.logo{
     background: #F17268;
     height: 40px;
     width: 200px;
-    padding: 5px;
+    padding: 6px;
     margin-left: 200px;
     border-radius: 5px 5px 5px 25px;
     font-size: 20px;
@@ -204,13 +205,17 @@ a.logo{
 }
 
 .left a span {
-    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.left a i {
+    padding-left: 12px;
 }
 
 .hero-image {
     position: absolute;
-    top: 20px; 
-    padding-left: 795px; 
+    top: 20px;
+    padding-left: 795px;
     z-index: -1;
     display: flex;
     justify-content: flex-end;
@@ -239,7 +244,7 @@ a.logo{
     grid-gap: 20px;
     padding-top: 200px;
     border-radius: 20px;
-    width: 100%; 
+    width: 100%;
     margin: 0px 220px;
 }
 
@@ -290,6 +295,7 @@ a.logo{
     font-size: 18px;
     font-weight: 600;
 }
+
  /*Separadores de secciones*/
 h2.separator{
     padding: 0 40px;
@@ -326,15 +332,19 @@ h2.separator{
     transform: translateY(-50%);
     transition: transform 0.1s linear;
 }
+
 .wrapper i:active{
     transform: translateY(-50%) scale(0.85);
 }
+
 .wrapper i:first-child{
     left: 40px;
 }
+
 .wrapper i:last-child{
     right: 40px;
 }
+
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
@@ -347,24 +357,30 @@ h2.separator{
     scrollbar-width: none;
     width: calc(100% - 240px);
 }
+
 .carousel::-webkit-scrollbar {
     display: none;
 }
+
 .carousel.no-transition {
     scroll-behavior: auto;
 }
+
 .carousel.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;
 }
+
 .carousel.dragging .card {
     cursor: grab;
     user-select: none;
 }
+
 .carousel :where(.card, .img) {
     display: flex;
     align-items: center;
 }
+
 .carousel .card {
     scroll-snap-align: start;
     height: 370px;
@@ -375,18 +391,21 @@ h2.separator{
     flex-direction: column;
     border-radius: 50px;
 }
+
 .carousel .card .img {
     background:transparent;
     height: auto;
     width: 100%;
     border-radius: 50px 50px 0 0;
 }
+
 .card .img1 img {
     height: 180px;
     width: 100%;
     border-radius: 50px 50px 0 0;
     object-fit: cover;
 }
+
 .carousel .card h2 {
     font-weight: 500;
     color: #0097B2;
@@ -394,6 +413,7 @@ h2.separator{
     font-weight: 700;
     margin: 30px 5px;
 }
+
 .carousel .card span {
     color: #000;
     font-size: 18px;
@@ -423,17 +443,43 @@ h2.separator{
     background: #3ba19a;
 }
 
+/*Estadisticas de casos de exito*/
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 40px;
+    background-color: #fff;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 80px;
+    color: #0097B2;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 30px;
+    color: #333;
+}
+
 /*Sección de blogs se hace uso de los contenedores del carrusel para el formato de los blogs*/
 .blogs{
     background-color: #F0F0F0;
     padding: 10px 0px;
 }
+
 .card .img img {
     height: 200px;
     width: 100%;
     border-radius: 50px 50px 0 0;
     object-fit: cover;
 }
+
 .blogs .card h2 {
     font-weight: 500;
     color: #0097B2;
@@ -441,11 +487,13 @@ h2.separator{
     font-weight: 700;
     margin: 30px 5px;
 }
+
 .blogs .card span {
     color: #000;
     font-size: 15px;
     margin: 0 10px;
 }
+
 /*Sección trabajo*/
 .work {
     display: flex;
@@ -457,9 +505,9 @@ h2.separator{
 .content-work {
     padding: 40px;
     display: flex;
-    flex-direction: column; 
-    align-items: center;   
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
 }
 
 .content-work h1 {
@@ -467,7 +515,7 @@ h2.separator{
     font-weight: bold;
     color: #000;
     margin-bottom: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .content-work button {
@@ -496,12 +544,270 @@ h2.separator{
     object-fit: cover;
 }
 
+/*Sección de about us*/
+.About-us{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 90px;
+}
+
+.About-us h1{
+    margin-left:230px;
+    font-size: 64px;
+    color: #000;
+   
+}
+
+.About-us p{
+    font-size: 21px;
+    color: #000;
+    text-align: justify;
+    margin-left: 40px; 
+}
+
+/* Contenedor de visión y misión/contacto */
+.vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 300px;
+}
+
+/* Contenedor de misión y botón de contacto */
+.mision-contacto-container {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+
+/* Estilos para .vision-content */
+.vision-content {
+    width: 621px;
+    padding: 22px 30px;
+    border-radius: 25px;
+    background-color: #29A7BD;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.vision-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.vision-content p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/* Estilos para .mision-content */
+.mision-content {
+    width: 621px;
+    padding: 22px 30px;
+    border-radius: 25px;
+    background-color: #29A7BD;
+    color: #fff;
+    flex-shrink: 0;
+    margin-left: 40px;
+    margin-bottom: 40px; 
+}
+
+.mision-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mision-content p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/* Estilos para el botón de contacto */
+.boton-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Evitar que el botón se reduzca */
+    margin-right: 1px;
+}
+
+.boton-contacto button {
+    height: 90px;
+    width: 390px;
+    background-color: #F17268;
+    border-radius: 5px 5px 5px 25px;
+    cursor: pointer;
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espacio entre texto y el icono */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.boton-contacto button:hover {
+    background-color: #ec4a3e;
+    color: #fff;
+}
+
+.boton-contacto button:hover span,
+.boton-contacto button:hover .whatsapp-icon {
+    color: #fff;
+}
+
+.whatsapp-icon {
+    height: 30px; /* Ajusta el tamaño del icono según sea necesario */
+    width: auto;
+}
+
+.team-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.team-section h1 {
+    margin-left:152px;
+    font-size: 64px;
+    color: #000;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 110px;
+}
+
+.team-member {
+    background-color: #D6ECED;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 340px;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.team-member h2 {
+    font-size: 22px;
+    margin: 10px 10px;
+    color: #0097B2;
+}
+
+.team-member p {
+    font-size: 20px;
+    color: #000;
+    line-height: 1.5;
+}
+
+/*Pestaña tienda (market)*/
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 160px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #B8B8B8;
+    color: #333;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.tag.food {
+    color: #fff;
+    background-color: #2ABA27;
+}
+
+.tag.toy {
+    color: #fff;
+    background-color: #003049;
+}
+
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price-container span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003049;
+}
+
+.price-container .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+}
+
+.price-container i {
+    margin-left: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.price-container i:hover {
+    color: #000;
+}
+
 /*Sección de contacto*/
 footer{
     background-color: #D5EEF1;
     position: relative;
     padding: 5px 20px;
 }
+
 .container-footer {
    margin: 0 auto;
    display: flex;
@@ -509,40 +815,47 @@ footer{
    align-items: center;
    flex-direction: column;
 }
+
 .row{
    display: flex;
    justify-content: center;
    align-items: center;
 }
+
 .col{
    min-width: 250px;
    color:#000;
    padding:0 3rem;
 }
+
 .col-social {
     min-width: 250px;
     color: #000;
     padding: 0 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
+
 .col-social .logo{
    width: 300px;
    margin-bottom:10px;
 }
+
 .social {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
 }
+
 .col h3{
    color:#29A7BD;
    margin-bottom: 10px;
    position: relative;
    cursor: pointer;
 }
+
 .col h3::after{
    content: '';
    height:3px;
@@ -552,25 +865,29 @@ footer{
    bottom: 0;
    left:0;
    transition: 0.3s ease;
-
 }
+
 .col h3:hover::after{
    width:30px
 }
+
 .col p{
    font-size: 16px;
    margin: 10px 0;
    color:#000;
 }
+
 .col-social .social a i{
    color:#000;
    transition: 0.3s ease;
    font-size: 30px;
 }
+
 .col-social .social a i:hover{
    transform: scale(1.5);
    filter:grayscale(25);
 }
+
 .col .links a{
    display: block;
    text-decoration: none;
@@ -579,6 +896,7 @@ footer{
    position: relative;
    transition: 0.3s ease;
 }
+
 .col .links a::before{
    content:'';
    height: 16px;
@@ -590,13 +908,16 @@ footer{
    transition: 0.5s ease;
    opacity: 0;
 }
+
 .col .links a:hover::before{
    opacity: 1;
 }
+
 .col .links a:hover{
    transform: translateX(-8px);
    color:#29A7BD;
 }
+
 .col .contact-details{
    display: inline-flex;
    justify-content: space-between;
@@ -606,9 +927,11 @@ footer{
 .services-content{
     font-size: 35px;
 }
+
 .services-content h1{
    margin-left: 150px;
 }
+
 .icons-servicios {
     display: flex;
     width: 495px;
@@ -617,17 +940,18 @@ footer{
     margin-left: 60px;
 }
 
-.services-button{
-   margin: 100px;
-   margin-left: 120px;
+.services-button {
+    margin: 100px;
+    margin-left: 120px;
 }
-.services-button button{
+
+.services-button button {
     height: 90px;
     width: 390px;
     background-color: #F17268;
     border-radius: 5px 5px 5px 25px;
     cursor: pointer;
-    color: #000000;
+    color: #000;
     font-size: 40px;
     font-weight: 700;
     border: none;
@@ -638,6 +962,18 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.services-button button a span {
+    color: #000;
+}
+
+.services-button button:hover {
+    background-color: #ec4a3e;
+    color: #fff;
+}
+
+.services-button button:hover a span {
+    color: #fff;
+}
 
 .main-services-content h2 {
     width: 476px;
@@ -704,7 +1040,6 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 
 .appointment-form {
@@ -1024,6 +1359,105 @@ input[type="radio"]#option2:checked ~ .toggle-bar {
     content: '✔';
     color: #29A7BD;
     margin-right: 10px;
+}
+/*Boton de whatsapp*/
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-text {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2db742;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-button i {
+    color: white;
+    font-size: 24px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-text p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Estilos para el formulario de contacto p*/
+.contact-form-container {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contact-form textarea,
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5CB4B5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3ba19a;
 }
 
 /*Galeria de imagenes*/
