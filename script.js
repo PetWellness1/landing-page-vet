@@ -170,3 +170,5 @@ showGallery('Dueños');
 
 setInterval(() => nextSlide('Dueños'), 5000);
 setInterval(() => nextSlide('Veterinarios'), 5000);
+
+//
