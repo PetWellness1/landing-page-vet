@@ -662,6 +662,22 @@
         
 
     </main>
+
+    <div data-content id="Contacto" class="contact-form-container">
+        <div class="contact-form">
+            <form>
+                <h2>Contáctanos</h2>
+                <label for="consulta">Ingrese su nombre</label>
+                <textarea id="consulta" name="nombre" required></textarea>
+                <label for="email">Ingrese su email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="consulta">Ingrese su consulta</label>
+                <textarea id="consulta" name="consulta" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    
     <footer>
         <div class="container-footer">
             <div class="row">
@@ -675,7 +691,7 @@
                 </div>
                
                 <div class="col">
-                    <h3>Contactanos</h3>
+                    <h3 data data-target="#Contacto">Contactanos</h3>
                     <div class="links">
                     <a href="#"><i class="fa-regular fa-envelope"></i> info@petwellness.pe</a>
                     <a href="#">Galeria de imagenes</a>
