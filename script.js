@@ -26,6 +26,20 @@ function showGallery(galleryName) {
     }
 }
 
+//mostrar y ocultar galeria
+function showGallery(galleryName) {
+    const dueñosGallery = document.querySelector('.gallery.Dueños');
+    const veterinariosGallery = document.querySelector('.gallery.Veterinarios');
+
+    if (galleryName === 'Dueños') {
+        dueñosGallery.style.display = 'block';
+        veterinariosGallery.style.display = 'none';
+    } else if (galleryName === 'Veterinarios') {
+        dueñosGallery.style.display = 'none';
+        veterinariosGallery.style.display = 'block';
+    }
+}
+
 // Configuración del carrusel
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
