@@ -1,16 +1,16 @@
 // Manejo de contenido basado en data-attributes
-const targets = document.querySelectorAll('[data-target]');
-const content = document.querySelectorAll('[data-content]');
+const targets = document.querySelectorAll('[data-target]')
+const content = document.querySelectorAll('[data-content]')
 
 targets.forEach(target => {
-    target.addEventListener('click', () => {
-        content.forEach(c => {
-            c.classList.remove('active');
-        });
-        const t = document.querySelector(target.dataset.target);
-        t.classList.add('active');
-    });
-});
+	target.addEventListener('click', () => {
+		content.forEach(c => {
+			c.classList.remove('active')
+		})
+		const t = document.querySelector(target.dataset.target)
+		t.classList.add('active')
+	})
+})
 
 //mostrar y ocultar galeria
 function showGallery(galleryName) {
@@ -56,7 +56,7 @@ carousel.classList.remove("no-transition");
 // Añadir event listeners para los botones de flecha para desplazar el carrusel a la izquierda y derecha
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
     });
 });
 
@@ -69,7 +69,7 @@ const dragStart = (e) => {
 }
 
 const dragging = (e) => {
-    if(!isDragging) return; // si isDragging es falso, retornar
+    if(!isDragging) return; // si estaArrastrando es falso, retornar
     // Actualizar la posición del scroll del carrusel basado en el movimiento del cursor
     carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 }
@@ -99,7 +99,7 @@ const infiniteScroll = () => {
 }
 
 const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Retornar si la ventana es menor a 800 o isAutoPlay es falso
+    if(window.innerWidth < 800 || !isAutoPlay) return; // Retornar si la ventana es menor a 800 o esAutoPlay es falso
     // Autoplay del carrusel cada 2500 ms
     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
 }
@@ -111,6 +111,7 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
 
 // Mostrar el botón cuando se desplaza hacia abajo 100px desde la parte superior del documento
 window.onscroll = function() {
@@ -171,4 +172,4 @@ showGallery('Dueños');
 setInterval(() => nextSlide('Dueños'), 5000);
 setInterval(() => nextSlide('Veterinarios'), 5000);
 
-//
+
