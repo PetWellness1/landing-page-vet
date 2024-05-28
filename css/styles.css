@@ -602,6 +602,164 @@ footer{
    justify-content: space-between;
 }
 
+/*Sección de servicios*/
+.services-content{
+    font-size: 35px;
+}
+.services-content h1{
+   margin-left: 150px;
+}
+.icons-servicios {
+    display: flex;
+    width: 495px;
+    justify-content: space-around; /* espaciar los iconos uniformemente */
+    align-items: center; 
+    margin-left: 60px;
+}
+
+.services-button{
+   margin: 100px;
+   margin-left: 120px;
+}
+.services-button button{
+    height: 90px;
+    width: 390px;
+    background-color: #F17268;
+    border-radius: 5px 5px 5px 25px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.main-services-content h2 {
+    width: 476px;
+    color: #00a4e4;
+    margin-top: 0;
+}
+
+.main-services-content img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    padding: 100px;
+}
+
+.content_left{
+    font-size: 23px;
+}
+
+.content_left p{
+    width: 476px;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.content_right{
+    font-size: 23px;
+}
+
+.content_right p{
+    width: 476px;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.service_citas{
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+}
+
+.service_grooming {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+    background-color: #D9D9D9;
+}
+
+.service_servicios{
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+}
+
+.service_cirugia {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around;
+    background-color: #D9D9D9;
+}
+
+/* Estilos para el formulario de "Reservar Servicio" */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.appointment-form {
+    background-color: #f0f0f0;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Aumenta el ancho del formulario */
+    max-width: 90%;
+    position: relative;
+    z-index: 10; /* Asegura que el formulario esté por encima de la imagen */
+}
+
+.appointment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5CB4B5;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appointment-form .radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.appointment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5CB4B5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.appointment-form button:hover {
+    background-color: #3ba19a;
+}
+
 /*Seccion descrubre mas*/
 .container-descubre {
     display: grid;
